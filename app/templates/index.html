@@ -157,6 +157,43 @@
                             <div class="col-xl-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
+                                        <i class="fas fa-database me-1"></i>
+                                        Check one serial
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="POST" action="/check_one_serial">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Serial to check ..." aria-label="Serial to check ..."
+                                                    aria-describedby="btnNavbarSearch" name="serialinput" />
+                                                <button class="btn btn-primary" id="btnNavbarSearch" type="submit"><i
+                                                        class="fas fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-database me-1"></i>
+                                        Upload DB with Excel file (xlsx)
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="POST" enctype="multipart/form-data">
+                                            <div class="input-group">
+                                                <input type="file" class="form-control" id="inputExcelFile" aria-describedby="inputGroupFileAddon04"
+                                                    aria-label="Upload" name="datainput">
+                                                <button class="btn btn-primary" type="submit" id="inputExcelSubmit"><i class="me-2 fas fa-upload"></i>Upload</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
                                         Area Chart Example
                                     </div>
