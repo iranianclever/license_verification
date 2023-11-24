@@ -160,7 +160,7 @@ def logout():
 @app.errorhandler(401)
 def unauthorized(error):
     """ Handling login failures """
-    flash('Login problem', 'danger')
+    flash('Username or password isn\'t correct!' , 'danger')
     return redirect('/login')
 
 
